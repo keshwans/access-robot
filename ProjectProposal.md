@@ -35,7 +35,7 @@ Please provide a detailed description of the app here. Map out how the app solve
 #### Timeline
 
 | Week | Date | Sprint | 
-|---|---|---|---|
+|----|----|---|
 | Week 1 | Aug 7 - 9 | Research: Submit project proposal (8/9), create wireframes, research robot design, order hardware components for experimentation.|
 | Week 2 | Aug 9 - 11 | Research II: Submit revised proposal (8/11), begin experimenting with hardware,  |
 | Week 2 | Aug 11 - 16 | Development I: |
