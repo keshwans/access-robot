@@ -80,8 +80,17 @@ The app:
 
 Jae:
 
+UI/UX - Wireframes of screens, storyboards of new user experience, sitemap to show activities that users have access to from each activity, maintaining consistent design feel through the app, working with programming language to decide how the interface is setup.
+
 Allison:
+
+Creating a programming language to control the robot's movements - creating scratch like programming language that is engaging but easy to understand, drag and drop interface on android. Ensuring language is inline with robot's capabilities.
+
+Kadeem:
+
+Communication between android and arduino/robot - Communication between arduino and android device through serial port, ensuring our programming language commands are properly transferred between hardware, possibly use a translator.
+
 
 Ramona:
 
-Kadeem:
+Manages the team to ensure work is on track with timeline, rotates between jobs to help where needed, will help with the communication between arduino and anroid, will help with programming language, parts are already ordered and should be here between monday and tuesday.
