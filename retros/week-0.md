@@ -5,6 +5,10 @@
 ### Discussions
 - Review of current proposal draft and robot parts list
 - Content of wireframes, flows, and user stories (robot assembly, drag and drop for a few commands)
+  - Assembly walkthrough
+  - Open example project
+  - Programming GUI (3-5 commands)
+  - Save current project
 - Hardware discussion: Arduino vs Raspberry Pi
 - Who is the user? Target ages (5 probably lower limit). Being engaging to a child while:
   - 1.) not constraining brand to super young children
