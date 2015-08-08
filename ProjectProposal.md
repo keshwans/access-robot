@@ -1,23 +1,27 @@
 # Access Code 2.1 Final Project Proposal (Draft)
 
-**Project Name TBD**  
-**Access Robot**  
-**Jae Bales, Allison Bojarski, Ramona Harrison, Kadeem Maragh**  
+**Project Name: TBD**  
+**Team Name: Access Robot**  
+**Team Members: Jae Bales, Allison Bojarski, Ramona Harrison, Kadeem Maragh**  
 
 ## The Problem 
 
 Our project aims to build an accessible, low-cost experimentation platform for programming and robotics.
 
+Software paragraph
+
+
 Hardware experimentation, in particular, has a high barrier to entry. In the past, few products were available . Recently, Little Bits,(starter kits $99-199). Lego produces robotics kits.
 
-
-Ultimately, we want our users to gain the learning skills and confidence to 
+User
 
 ## The Solution 
 
-The project consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
+The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
 
 By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide, in particular in the emerging markets where cost presents 
+
+Ultimately, we want our users to gain the learning skills and confidence to engage with the platform, and with technology as a whole, not just as users but as collaborators and creators.
 
 #### Baseline features
 
