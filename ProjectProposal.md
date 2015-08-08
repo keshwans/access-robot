@@ -8,24 +8,41 @@
 
 Our project aims to build an accessible, low-cost experimentation platform for programming and robotics.
 
-Software paragraph
+Software paragraph. Existing resources:
 
-tynker.com online programming courses for kids ($50 (single course) - $250 (learning pathway)).
+Scratch - open source graphical programming language (free).
+Tynker.com - online programming courses for kids ($50 (single course) - $250 (learning pathway)).
 
-Hardware experimentation, in particular, has a high barrier to entry. 
+Hardware experimentation, in particular, has a high barrier to entry. Existing resources:
+
 Little Bits (starter kits $99-199). 
 Lego Mindstorm robotics kit ($349.99).
-Sphero (smartphone controlled robot $129.99).
+Boe-Bot - robot kit commonly used in schools ($159.99).
 
-User
+User paragraph: child learning independently, parent w/ child, teacher w/ class room.
 
 ## The Solution 
 
 The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
 
-By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide, in particular in the emerging markets where cost presents 
+The robot:
+ * Built around a widely available open-source microcontroller (likely Arduino).
+ * Forward, backward and rotational movement (2x servo motors).
+ * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard).
+ * Battery powered and controlled via Bluetooth with an Android device.
+ * Simple and flexible design encourages user modifications.
+ 
+The app:
+ * Android based programming environment.
+ * Graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
+ * Flexibility to modify and expand the language by creating new methods.
+ * Option to move to a text based environment.
+ * Elegant, enjoyable + easy to use UI/UX.
+ * On first launch, the user is presented with a guide on sourcing and building the robot featuring illustration, text and/or video instructions.
 
-Ultimately, we want our users to gain the learning skills and confidence to engage with the platform, and with technology as a whole, not just as users but as collaborators and creators.
+By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide.
+
+Ultimately, we want to inspire the learning skills and confidence for our users to engage with the platform, and with technology as a whole, as collaborators and creators.
 
 #### Baseline features
 
