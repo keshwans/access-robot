@@ -63,7 +63,7 @@ Ultimately, we want our users to gain the learning skills and confidence to enga
 
 Jae:
 
-**UI/UX - Wireframes of screens, storyboards of new user experience, sitemap to show activities that users have access to from each activity, maintaining consistent design feel through the app.**
+**UI/UX - Wireframes of screens, storyboards of new user experience, sitemap to show activities that users have access to from each activity, maintaining consistent design feel through the app, working with programming language to decide how the interface is setup.**
 
 Allison:
 
