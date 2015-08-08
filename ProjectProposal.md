@@ -53,7 +53,7 @@ The app:
 
 #### Bonus features
 
- * Platform (web based?) for sharing robot patterns + programs.
+ * Simple web platform for sharing robot patterns + programs.
  * Robot add-ons: lights, sensors, internet connectivity.
  * Translation to other spoken languages (e.g. Spanish).
 
