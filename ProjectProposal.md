@@ -8,41 +8,24 @@
 
 Our project aims to build an accessible, low-cost experimentation platform for programming and robotics.
 
-Software paragraph. Existing resources:
+Software paragraph
 
-Scratch - open source graphical programming language (free).
-Tynker.com - online programming courses for kids ($50 (single course) - $250 (learning pathway)).
+tynker.com online programming courses for kids ($50 (single course) - $250 (learning pathway)).
 
-Hardware experimentation, in particular, has a high barrier to entry. Existing resources:
-
+Hardware experimentation, in particular, has a high barrier to entry. 
 Little Bits (starter kits $99-199). 
 Lego Mindstorm robotics kit ($349.99).
-Boe-Bot - robot kit commonly used in schools ($159.99).
+Sphero (smartphone controlled robot $129.99).
 
-User paragraph: child learning independently, parent w/ child, teacher w/ class room.
+User
 
 ## The Solution 
 
 The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
 
-The robot:
- * Built around a widely available open-source microcontroller (likely Arduino).
- * Forward, backward and rotational movement (2x servo motors).
- * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard).
- * Battery powered and controlled via Bluetooth with an Android device.
- * Simple and flexible design encourages user modifications.
- 
-The app:
- * Android based programming environment.
- * Graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
- * Flexibility to modify and expand the language by creating new methods.
- * Option to move to a text based environment.
- * Elegant, enjoyable + easy to use UI/UX.
- * On first launch, the user is presented with a guide on sourcing and building the robot featuring illustration, text and/or video instructions.
+By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide, in particular in the emerging markets where cost presents 
 
-By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide.
-
-Ultimately, we want to inspire the learning skills and confidence for our users to engage with the platform, and with technology as a whole, as collaborators and creators.
+Ultimately, we want our users to gain the learning skills and confidence to engage with the platform, and with technology as a whole, not just as users but as collaborators and creators.
 
 #### Baseline features
 
@@ -80,8 +63,17 @@ Ultimately, we want to inspire the learning skills and confidence for our users 
 
 Jae:
 
+##UI/UX - Wireframes of screens, storyboards of new user experience, sitemap to show activities that users have access to from each activity, maintaining consistent design feel through the app
+
 Allison:
+
+##Communication between android and arduino/robot - Communication between arduino and android device through serial port, ensuring our programming language commands are properly transferred between hardware, possibly use a translator.
 
 Ramona:
 
+##Creating a programming language to control the robot's movements - creating scratch like programming language, drag and drop interface on android. Ensuring language is inline with robot's capabilities.
+
 Kadeem:
+
+
+
