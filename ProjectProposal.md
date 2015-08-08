@@ -10,8 +10,12 @@ Our project aims to build an accessible, low-cost experimentation platform for p
 
 Software paragraph
 
+tynker.com online programming courses for kids ($50 (single course) - $250 (learning pathway)).
 
-Hardware experimentation, in particular, has a high barrier to entry. In the past, few products were available . Recently, Little Bits,(starter kits $99-199). Lego produces robotics kits.
+Hardware experimentation, in particular, has a high barrier to entry. 
+Little Bits (starter kits $99-199). 
+Lego Mindstorm robotics kit ($349.99).
+Sphero (smartphone controlled robot $129.99).
 
 User
 
