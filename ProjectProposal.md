@@ -93,4 +93,4 @@ Communication between android and arduino/robot - Communication between arduino 
 
 Ramona:
 
-Manages the team to ensure work is on track with timeline, rotates between jobs to help where needed, will help with the communication between arduino and anroid, will help with programming language, parts are already ordered and should be here between monday and tuesday.
+Manages the team to ensure work is on track with timeline, rotates between jobs to help where needed, design of robot, will help with the communication between arduino and anroid, will help with programming language, parts are already ordered and should be here between monday and tuesday.
