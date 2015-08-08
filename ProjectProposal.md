@@ -15,14 +15,13 @@ In this section, please frame the issue with supporting statistics about the nee
 Please provide a detailed description of the app here. Map out how the app solves the problem described in section I. 
 #### Baseline features
 
- * Simple, low cost (<$40) diy robot that looks good and functions well
- * Assembly tutorial included with app
- * Graphical programming interface to control the robot with an Android device
- * No upper limit for 'hackability'
+ * Low cost (<$40) diy robot that functions well and looks good.
+ * Simple enough for a kid to put together in a weekend. The app includes an assembly walkthrough.
+ * Graphical + text-based programming interfaces to control the robot with an Android device. No upper limit for 'hackability'.
 
 #### Bonus features
 
- * Platform (web?) for sharing robot patterns + programs
+ * Platform (web based?) for sharing robot patterns + programs
 
 ### Wireframe
 
