@@ -6,27 +6,29 @@
 
 ## The Problem 
 
-Our project aims to build an accessible, low-cost experimentation platform that introduces programming and robotics to kids.
+Our project aims to build an accessible, low-cost experimentation platform that introduces programming and robotics to kids in a way that inspires confidence, creativity and continued self-learning.
 
-Software to teach kids to program exists but not in combination with hardware/robotics. In surveying the Google Play store, we could find no such combination. Existing software resources:
+Existing products in this sphere are complicated by three major limitations: cost, complexity, and platform availability. 
 
-* [Scratch] (https://scratch.mit.edu/) - open-source graphical programming language (free).
-* [Tynker.com] (https://www.tynker.com/) - online programming courses for kids ($50 (single course) - $250 (learning pathway)).
+Mobile apps that teach kids to program exist, but none in combination with hardware or robotics. In surveying the Google Play store, we could find no such combination. Popular existing resources include:
 
-Hardware experimentation, in particular, has a high barrier to entry. Existing hardware resources:
+* [Scratch] (https://scratch.mit.edu/) - open-source graphical programming language (free, web + desktop only).
+* [Tynker.com] (https://www.tynker.com/) - Scratch-based online programming courses for kids ($50 (single course) - $250 (learning pathway)).
+
+Hardware experimentation, in particular, has a high barrier to entry. Popular existing hardware products:
 
 * [Little Bits] (http://littlebits.cc) (starter kits $99-199). 
 * [Lego Mindstorms] (http://www.lego.com/en-us/mindstorms) robotics kit ($349.99).
 * [Boe-Bot] (https://www.parallax.com/product/boe-bot-robot) - robot kit commonly used in schools ($159.99).
 
-We envision our primary users as kids as young as 5 and as old as teens (realizing that we'll need a UI/UX that can appeal to this full age range). Our app would be engaging to a child while also being able to interest adults in helper roles (parents, teachers). Users would range from a child learning independently, parent(s) with a child, or a teacher with a classroom full of students.
+We envision our primary users to be kids as young as 5 and as old as teens (realizing that we'll need a UI/UX that can appeal to this full age range). Our app would be engaging to a child while also being able to interest adults in helper roles (parents, teachers). Users would range from a child learning independently, parent(s) with a child, or a teacher with a classroom full of students.
 
 ## The Solution 
 
 The project consists of two parts: hardware (the robot) and software (an Android-based environment to control robot movement with a graphical programming language, introducing the principles of programming to kids as they play).
 
  * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components with a simple, proven design.
- * Simple enough for a kid to put together in a weekend. The app will include an assembly walkthrough.
+ * Basic enough for a kid to put together in a weekend. The app will include an assembly walkthrough.
  * Both graphical + text-based programming interfaces to control the robot with an Android device. 
  * Designed for learning and growth. No upper limit for 'hackability'.
 
