@@ -39,13 +39,13 @@ Ultimately, we want to inspire the learning skills and confidence for our users 
 The robot:
  * Built around a widely available open-source microcontroller (likely [Arduino](https://www.arduino.cc/)).
  * Forward, backward and rotational movement (2x [servomotors](https://learn.adafruit.com/adafruit-motor-selection-guide/continuous-rotation-servos)).
- * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard). ([Example Design](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts))
- * Battery powered and controlled via Bluetooth with an Android device. [Existing library for Android <--Bluetooth--> Arduino](https://github.com/aron-bordin/Android-with-Arduino-Bluetooth)
+ * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard). ([Example design](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts))
+ * Battery powered and controlled via Bluetooth with an Android device. [Existing library for Android <--> Arduino via Bluetooth](https://github.com/aron-bordin/Android-with-Arduino-Bluetooth)
  * Simple and flexible design encourages user modifications.
  
 The app:
  * Android-based programming environment.
- * Graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
+ * Simple, graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
  * Flexibility to modify and expand the language by creating new methods.
  * Option for advanced users to move to a text-based environment.
  * Elegant, enjoyable + easy to use UI/UX.
@@ -67,8 +67,8 @@ The app:
 |----|----|---|
 | Week 1 | Aug 7 - 9 | Research: Submit project proposal (8/9). Create wireframes. Research robot design and consolidate resources. Order hardware components for experimentation. |
 | Week 2 | Aug 9 - 11 | Research II: Submit revised proposal (8/11). Begin experimenting with hardware and writing code to interface Android with hardware. Research programming environments for children. |
-| Week 2 | Aug 11 - 16 | Development I: Build Android-Hardware interface. Experiment with programming environment / language design. Experiment with robot design.|
-| Week 3 | Aug 17 - 23 | Development II: Build out programming environment. Finalize robot design. |
+| Week 2 | Aug 11 - 16 | Development I: Build Android-Hardware interface. Experiment with programming environment. Prototype graphical language. Experiment with robot design.|
+| Week 3 | Aug 17 - 23 | Development II: Build out programming environment. Wrap code to interface with the robot in graphical language commands. Finalize robot design. |
 | Week 4 | Aug 24 - 31 | Development III: Enrich UI/UX. Build robot assembly walkthrough activity. Finalize app. |
 | Week 5 | Sep 1, 7pm | First Release + Demo |
 | Week 5 | Sep 2 - 8 | Testing I: Write tests and debug. Polish features for the second release. Implement bonuses. |
