@@ -4,9 +4,9 @@
 
 ### Discussions
 - Review of current proposal draft and robot parts list
-- Content of wireframes, flows, and user stories (robot assembly, drag and drop for a few commands)
-  - Assembly walkthrough
-  - Open example project
+- Content of wireframes, flows, and user stories
+  - Robot assembly walkthrough for first-time user
+  - Returning user: start new project, open existing project
   - Programming GUI (3-5 commands)
   - Save current project
 - Hardware discussion: Arduino vs Raspberry Pi
@@ -18,7 +18,7 @@
 - How to talk to and instruct children (team member-led videos probably best solution)
 - Creating a drag and drop interface that works well on a small device (phone), but also scales to larger device (tablet)
 - Handling case where a child is "stuck" -- what do we present as a resource?
-- Keeping the experience engaging and challenging/rewarding, mitigrating frustration
+- Keeping the experience engaging and challenging/rewarding, mitigating frustration
 - Finding child testers!
 
 ### Topics of research
