@@ -5,7 +5,7 @@
 MIT’s platform for children to program stories, games, and animations. Uses draggable, interlocking UI elements to build programs and reinforce programming concepts.
 
 [Google Developers - Tech Tips from Teachers](https://www.youtube.com/playlist?list=PLOU2XLYxmsIIn9zepP_JLwNkvqYzpfieY&linkId=16083062)  
-A Google Developers series focused on creating engaging educational apps with high adoption rate.
+A Google Developers series focused on creating engaging educational apps with high adoption rate. [Notes here.](https://docs.google.com/document/d/1GZiQAts0ZmNQP68x3nVFk0nu5dFuW5jYiSJ15epoAGY/edit?usp=sharing)  
 
 [Code Monkey Island](https://www.google.com/url?q=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Frajsidhu%2Fcode-monkey-island-making-programming-childs-play%2Fdescription&sa=D&sntz=1&usg=AFQjCNFATqbBYIiHClCooDYwtRR4c7VzXQ)  
 Kickstarter for a board game that teaches programming logic to kids. Great philosophy, beautifully designed. From the kickstarter: “What I realized almost immediately while prototyping and testing this game was that kids are way, way smarter than we give them credit for.”
