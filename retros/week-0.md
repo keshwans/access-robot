@@ -20,6 +20,9 @@
 - Handling case where a child is "stuck" -- what do we present as a resource?
 - Keeping the experience engaging and challenging/rewarding, mitigating frustration
 - Finding child testers!
+- Implementing GUI
+  - Create snapping gridlines to keep code blocks locked?
+  - Let's play with Scratch and brainstorm!
 
 ### Topics of research
 - Child learning and development: at what age do kids have the ability to follow instructions, understand language and concepts?
