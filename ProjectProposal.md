@@ -25,7 +25,7 @@ We envision our primary users as kids as young as 5 and as old as teens (realizi
 
 The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
 
- * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components. 
+ * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components with a simple, proven design. ([Example Design](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts))
  * Simple enough for a kid to put together in a weekend. The app will include an assembly walkthrough.
  * Both graphical + text-based programming interfaces to control the robot with an Android device. 
  * Designed for learning and growth. No upper limit for 'hackability'.
@@ -37,8 +37,8 @@ Ultimately, we want to inspire the learning skills and confidence for our users 
 #### Baseline features
 
 The robot:
- * Built around a widely available open-source microcontroller (likely [Arduino] (https://www.arduino.cc/)).
- * Forward, backward and rotational movement (2x [servomotors] (https://en.wikipedia.org/wiki/Servomotor)).
+ * Built around a widely available open-source microcontroller (likely [Arduino](https://www.arduino.cc/)).
+ * Forward, backward and rotational movement (2x [servomotors](https://learn.adafruit.com/adafruit-motor-selection-guide/continuous-rotation-servos)).
  * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard).
  * Battery powered and controlled via Bluetooth with an Android device.
  * Simple and flexible design encourages user modifications.
@@ -89,7 +89,6 @@ Creating a programming language to control the robot's movements - creating Scra
 **Kadeem:**
 
 Communication between Android and Arduino/robot - communication between Arduino and Android device through serial port, ensuring our programming language commands are properly transferred between hardware, possibly use a translator.
-
 
 **Ramona:**
 
