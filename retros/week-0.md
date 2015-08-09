@@ -23,6 +23,7 @@
 - Implementing GUI
   - Create snapping gridlines to keep code blocks locked?
   - Let's play with Scratch and brainstorm!
+  - Creating a scaleable UI that works well with young users (maybe not great motor skills)
 
 ### Topics of research
 - Child learning and development: at what age do kids have the ability to follow instructions, understand language and concepts?
