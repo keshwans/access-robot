@@ -39,7 +39,7 @@ Ultimately, we want to inspire the learning skills and confidence for kids to en
 The robot:
  * Built around a widely available open-source microcontroller (likely [Arduino](https://www.arduino.cc/)).
  * Forward, backward and rotational movement (2x [continuous rotation servos](https://learn.adafruit.com/adafruit-motor-selection-guide/continuous-rotation-servos)).
- * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard - [Example design we will use as our starting point](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts)).
+ * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard - [example design we will use as our starting point](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts)).
  * Battery powered and controlled via Bluetooth with an Android device ([existing library for Android <--> Arduino via Bluetooth](https://github.com/aron-bordin/Android-with-Arduino-Bluetooth)).
  * Simple and flexible design encourages user modifications: paint it, decorate it, add hardware mods.
  
