@@ -13,7 +13,7 @@ Existing products in this sphere are complicated by three major limitations: cos
 Mobile apps that teach kids to program exist, but none in combination with hardware or robotics. In surveying the Google Play store, we could find no such combination. Popular existing resources include:
 
 * [Scratch] (https://scratch.mit.edu/) - open-source graphical programming language (free, web + desktop only).
-* [Tynker.com] (https://www.tynker.com/) - Scratch-based online programming courses for kids ($50 (single course) - $250 (learning pathway)).
+* [Tynker.com] (https://www.tynker.com/) - Scratch-based online programming courses for kids ($50 single course - $250 learning pathway).
 
 Hardware experimentation, in particular, has a high barrier to entry. Popular existing hardware products:
 
