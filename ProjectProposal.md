@@ -6,7 +6,7 @@
 
 ## The Problem 
 
-Our project aims to build an accessible, low-cost experimentation platform for programming and robotics for kids.
+Our project aims to build an accessible, low-cost experimentation platform that introduces programming and robotics to kids.
 
 Software to teach kids to program exists but not in combination with hardware/robotics. In surveying the Google Play store, we could find no such combination. Existing software resources:
 
@@ -23,16 +23,16 @@ We envision our primary users as kids as young as 5 and as old as teens (realizi
 
 ## The Solution 
 
-The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
+The project consists of two parts: hardware (the robot) and software (an Android-based environment to control robot movement with a graphical programming language, introducing the principles of programming to kids as they play).
 
  * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components with a simple, proven design.
  * Simple enough for a kid to put together in a weekend. The app will include an assembly walkthrough.
  * Both graphical + text-based programming interfaces to control the robot with an Android device. 
  * Designed for learning and growth. No upper limit for 'hackability'.
 
-By building on Android, our platform becomes accessible to the more than 1 billion Android users worldwide.
+By building on Android, our project becomes accessible to the more than 1 billion Android users worldwide -- especially in markets where cost places existing robotics experimentation kits out of reach. Building the project around a physical object (the robot) captures the excitement and possibility of programming and blends "screen time" into a creative, hands-on activity with limitless possiblity.
 
-Ultimately, we want to inspire the learning skills and confidence for our users to engage with the platform, and with technology as a whole, as collaborators and creators.
+Ultimately, we want to inspire the learning skills and confidence for kids to engage with the project -- and with all technology in their lives -- not just as users but as collaborators and creators.
 
 #### Baseline features
 
@@ -41,7 +41,7 @@ The robot:
  * Forward, backward and rotational movement (2x [continuous rotation servos](https://learn.adafruit.com/adafruit-motor-selection-guide/continuous-rotation-servos)).
  * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard - [Example design we will use as our starting point](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts)))
  * Battery powered and controlled via Bluetooth with an Android device. [Existing library for Android <--> Arduino via Bluetooth](https://github.com/aron-bordin/Android-with-Arduino-Bluetooth)
- * Simple and flexible design encourages user modifications.
+ * Simple and flexible design encourages user modifications: paint it, decorate it, add hardware mods.
  
 The app:
  * Android-based programming environment.
