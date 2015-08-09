@@ -92,4 +92,4 @@ Communication between Android and Arduino/robot - communication between Arduino 
 
 **Ramona:**
 
-Manages the team to ensure work is on track with timeline, rotates between jobs to help where needed, design of robot, will help with the communication between Arduino and Android, will help with programming language, parts are already ordered and should be here between Monday and Tuesday.
+Manages the team to ensure work is on track with timeline, rotates between jobs to help where needed, design of robot, will help with the communication between Arduino and Android, will help with programming language, parts are already ordered and should be here between Monday and Tuesday. ([Project hardware inventory](https://github.com/jaellysbales/access-robot/blob/master/hardware-list.md))
