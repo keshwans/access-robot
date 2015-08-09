@@ -25,7 +25,7 @@ We envision our primary users as kids as young as 5 and as old as teens (realizi
 
 The platform consists of two parts: hardware (the robot) and software (an Android-based programming environment for controlling the robot).
 
- * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components with a simple, proven design. ([Example Design](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts))
+ * Low-cost DIY robot (less than $40) that functions well and looks good. Built from open-source, easily acquired components with a simple, proven design.
  * Simple enough for a kid to put together in a weekend. The app will include an assembly walkthrough.
  * Both graphical + text-based programming interfaces to control the robot with an Android device. 
  * Designed for learning and growth. No upper limit for 'hackability'.
@@ -39,17 +39,17 @@ Ultimately, we want to inspire the learning skills and confidence for our users 
 The robot:
  * Built around a widely available open-source microcontroller (likely [Arduino](https://www.arduino.cc/)).
  * Forward, backward and rotational movement (2x [servomotors](https://learn.adafruit.com/adafruit-motor-selection-guide/continuous-rotation-servos)).
- * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard).
- * Battery powered and controlled via Bluetooth with an Android device.
+ * Chassis constructed from low-cost and/or recycled materials (e.g. cardboard). ([Example Design](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts))
+ * Battery powered and controlled via Bluetooth with an Android device. [Existing library for Android <--Bluetooth--> Arduino](https://github.com/aron-bordin/Android-with-Arduino-Bluetooth)
  * Simple and flexible design encourages user modifications.
  
 The app:
  * Android-based programming environment.
  * Graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
  * Flexibility to modify and expand the language by creating new methods.
- * Option to move to a text-based environment.
+ * Option for advanced users to move to a text-based environment.
  * Elegant, enjoyable + easy to use UI/UX.
- * On first launch, the user is presented with a guide on sourcing and building the robot featuring illustration, text and/or video instructions.
+ * On first launch, the user is presented with a guide on sourcing and building the robot. Features illustration, text and/or video instructions.
 
 #### Bonus features
 
