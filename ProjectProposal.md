@@ -60,6 +60,7 @@ The app:
  * Translation to other spoken languages (e.g. Spanish).
 
 ### Wireframe
+Please see write-up at [wireframes.md](https://github.com/jaellysbales/access-robot/blob/master/wireframes/wireframes.md).
 
 ## Execution
 
