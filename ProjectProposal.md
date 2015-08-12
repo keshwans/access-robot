@@ -10,7 +10,7 @@ Our project aims to build an accessible, low-cost experimentation platform that 
 
 Existing products in this sphere are complicated by three major limitations: cost, complexity, and platform availability. 
 
-Mobile apps that teach kids to program exist, but none in combination with hardware or robotics. In surveying the Google Play store, we could find no such combination. Popular existing resources include:
+Android apps that teach kids to program exist, but none in combination with hardware or robotics. In surveying the Google Play store, we could find no such combination. Popular existing resources include:
 
 * [Scratch] (https://scratch.mit.edu/) - open-source graphical programming language (free, web + desktop only).
 * [Tynker.com] (https://www.tynker.com/) - Scratch-based online programming courses for kids ($50 single course - $250 learning pathway).
