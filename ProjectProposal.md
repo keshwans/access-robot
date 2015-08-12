@@ -1,4 +1,4 @@
-# Access Code 2.1 Final Project Proposal (Draft)
+# Access Code 2.1 Final Project Proposal
 
 **Project Name: TBD**  
 **Team Name: Access Robot**  
@@ -32,7 +32,13 @@ The project consists of two parts: hardware (the robot) and software (an Android
  * Both graphical + text-based programming interfaces to control the robot with an Android device. 
  * Designed for learning and growth. No upper limit for 'hackability'.
 
-By building on Android, our project becomes accessible to the more than 1 billion Android users worldwide -- especially in markets where cost places existing robotics experimentation kits out of reach. Building the project around a physical object (the robot) captures the excitement and possibility of programming and blends "screen time" into a creative, hands-on activity with limitless possiblity.
+By building on Android, our project becomes accessible to the more than 1 billion Android users worldwide -- especially in markets where cost places existing robotics experimentation kits out of reach. Our experience at Access Code (and subsequent alignment with C4Q's mission and values) strongly informs our belief that lowering the financial barrier to hardware experimentation by 60% has significant, impactful value for the following groups:
+- A child saving to purchase his/her own components
+- Parent(s) with multiple children
+- Teacher/school purchasing for students (electronics sold in bulk would actually reduce the cost per "kit" in this use case)
+- Low-income families, whether they be American or in developing nations
+
+Building the project around a physical object (the robot) captures the excitement and possibility of programming and blends "screen time" into a creative, hands-on activity with limitless possiblity.
 
 Ultimately, we want to inspire the learning skills and confidence for kids to engage with the project -- and with all technology in their lives -- not just as users but as collaborators and creators.
 
@@ -47,20 +53,24 @@ The robot:
  
 The app:
  * Android-based programming environment.
- * Simple, graphical programming language (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
- * Flexibility to modify and expand the language by creating new methods.
+ * Simple, graphical programming language/interface (think [Scratch](https://scratch.mit.edu/)) with native methods for controlling the robot.
+  * [Google Blockly](https://developers.google.com/blockly/?hl=en) provides a 100% client-side, customizable library with tons of functionality built-in.
+  * Wrapping series of long, potentially complex Arduino commands in one GUI element for the user.
+  * 10 basic commands (move forward/backward/left/right, rotate n degrees, blink x color y times, etc.) to start, with flexibility to modify and expand the language/interface by creating new methods (see [Custom Blocks with Blockly](https://developers.google.com/blockly/custom-blocks/overview)).
  * Option for advanced users to move to a text-based environment.
  * Elegant, enjoyable + easy to use UI/UX.
  * On first launch, the user is presented with a guide on sourcing and building the robot. Features illustration, text and/or video instructions.
 
+**[Project Resources](https://github.com/jaellysbales/access-robot/blob/master/resources.md)**
+
 #### Bonus features
 
- * Simple web platform for sharing robot patterns + programs.
+ * Simple web platform for sharing robot patterns + programs (Google Blockly enables this via [cloud storage](https://developers.google.com/blockly/installation/cloud-storage)).
  * Robot add-ons: lights, sensors, internet connectivity.
  * Translation to other spoken languages (e.g. Spanish).
 
 ### Wireframe
-Please see write-up at [wireframes.md](https://github.com/jaellysbales/access-robot/blob/master/wireframes/wireframes.md).
+Please review wireframes [here](https://github.com/jaellysbales/access-robot/blob/master/wireframes/wireframes.md).
 
 ## Execution
 
