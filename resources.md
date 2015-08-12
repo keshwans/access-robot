@@ -34,6 +34,9 @@ Nifty little Arduino drawing robot that likes to sketch obscene things :)
 [How to Make Your First Arduino Robot](http://www.foxytronics.com/learn/robots/how-to-make-your-first-arduino-robot/parts)  
 Solid looking low-cost arduino robot tutorial.
 
+[Bluetooth serial communication with Mac, JY-MCU Bluetooth and Arduino](https://decyborg.wordpress.com/2013/09/08/bluetooth-serial-communication-with-arduino-jy-mcu-bluetooth-and-macbook-pro/)  
+Connect Mac to Arduino via Bluetooth. **8/11 - complete**
+
 [Connect Arduino to Android via Bluetooth](http://www.instructables.com/id/Connect-Arduino-Uno-to-Android-via-Bluetooth/?ALLSTEPS)  
 Tutorial on how to install Bluetooth to Arduino and connect to Android.
 
@@ -53,10 +56,14 @@ Tynker for Schools, The Foos, and Pocket Code are all recommended by Google as c
 #### Libraries
 
 [Google Blockly](https://developers.google.com/blockly/)  
-Blockly is a library for building visual programming editors. 
+Blockly is a library for building visual programming editors. Lots of functionality built-in, customizable in many ways, users able to share patterns via cloud storage.
 
-#### Misc
-[A Programming Language for Children](https://www.youtube.com/watch?v=qDZ5Ku6whi0) by [Mary Rose Cook](http://maryrosecook.com/)  
-Should we reach out to her? I think she would be very interested in our program and in this project. Maybe when we’ve got a solid proposal fleshed out.
+#### Languages
+[A Programming Language for Children](https://www.youtube.com/watch?v=qDZ5Ku6whi0) by [Mary Rose Cook](http://maryrosecook.com/)
 
+[Turtle Academy](https://turtleacademy.com/learn.php)  
+Website aimed at helping kids learn programming. See [Logo language Wiki](https://en.wikipedia.org/wiki/Logo_(programming_language)).
 
+### Misc
+
+[Developing a Plugin on Android](http://cordova.apache.org/docs/en/2.4.0/guide_plugin-development_android_index.md.html#Developing%20a%20Plugin%20on%20Android)
