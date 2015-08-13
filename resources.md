@@ -64,6 +64,20 @@ Blockly is a library for building visual programming editors. Lots of functional
 [Turtle Academy](https://turtleacademy.com/learn.php)  
 Website aimed at helping kids learn programming. See [Logo language Wiki](https://en.wikipedia.org/wiki/Logo_(programming_language)).
 
+### UI/UX
+
+[Designing Mobile Apps for Kids](https://realm.io/news/altconf-kathryn-rotondo-designing-mobile-apps-for-kids/)
+Talk on maximizing engagement and minimizing frustration for young users. Covers intuitive gestures, content for parents, audio/visual input feedback, etc.
+
+[Designing Web Interface for Kids](http://www.uxhandy.com/user-experience/designing-web-interfaces-for-kids/)
+Thorough article provides some tips that can probably be implemented on mobile.
+
+[Brand voice and UX: A starter guide](https://medium.com/@InVisionApp/brand-voice-and-ux-a-starter-guide-84009692c1c4?ref=uxhandy)
+Digging deep into defining your brand's voice/tone/character.
+
 ### Misc
+
+[The Disruption Department](http://thedisruptiondepartment.org/)
+St. Louis-based organization connecting students, regardless of circumstance, to tech and learning/building experiences. STEAM.
 
 [Developing a Plugin on Android](http://cordova.apache.org/docs/en/2.4.0/guide_plugin-development_android_index.md.html#Developing%20a%20Plugin%20on%20Android)
