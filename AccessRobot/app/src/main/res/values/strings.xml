@@ -3,5 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="instructions">Tap to move your robot right now!</string>
+    <string name="instructions">Control your robot with this remote!</string>
+    <string name="action_connect_robot">Connect robot</string>
+    <string name="action_code">Code</string>
 </resources>
