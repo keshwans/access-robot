@@ -1,5 +1,6 @@
 package ksmaragh.c4q.nyc.accessrobot;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -183,8 +184,8 @@ public class DemoActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_code:
-//                Intent settings = new Intent(this, Code.class);
-//                startActivity(settings);
+                Intent code = new Intent(this, Code.class);
+                startActivity(code);
                 break;
             case R.id.action_settings:
 //                Intent settings = new Intent(this, Settings.class);
