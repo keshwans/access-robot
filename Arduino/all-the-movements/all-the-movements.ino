@@ -24,9 +24,8 @@ void setup() {
 }
  
 void loop() {
-  
-  if (Serial.available() > 0) {  // if the data came
     lastByte = incomingByte;
+  if (Serial.available() > 0) {  // if the data came
     incomingByte = Serial.read(); // read byte
   }
   
@@ -43,10 +42,12 @@ void loop() {
     }
     
     if(incomingByte == 'f') {
+       fade();
        moveForward();   
     }
     
     if(incomingByte == 'b') {
+       fade();
        moveBackward();
     }
     
@@ -56,7 +57,7 @@ void loop() {
          turnLeft();
         }
       } else {
-        moveForward();
+        incomingByte = 'x';
       }
     }
     
@@ -66,11 +67,12 @@ void loop() {
          turnRight();
         }
       } else {
-        moveForward();
+        incomingByte = 'x';
       }
     }
     
     if(incomingByte == 'x') {
+      fade();
       stopMoving();
     }
     
@@ -102,12 +104,12 @@ void moveBackward() {
    leftMotor.write(180);
 }
 
-void turnRight() {
+void turnLeft() {
    rightMotor.write(0);
    leftMotor.write(0);
 }
 
-void turnLeft() {
+void turnRight() {
    rightMotor.write(180);
    leftMotor.write(180);
 }

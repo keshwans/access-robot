@@ -18,12 +18,12 @@
 
     <item
         android:id="@+id/insecure_connect_scan"
-        myapp:showAsAction="ifRoom"
+        myapp:showAsAction="never"
         android:title="@string/insecure_connect"/>
 
     <item
         android:id="@+id/discoverable"
-        myapp:showAsAction="ifRoom"
+        myapp:showAsAction="never"
         android:title="@string/discoverable"/>
 
 </menu>
