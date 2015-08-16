@@ -26,6 +26,7 @@ void setup() {
 void loop() {
   
   if (Serial.available() > 0) {  // if the data came
+    lastByte = incomingByte;
     incomingByte = Serial.read(); // read byte
   }
   
@@ -77,7 +78,6 @@ void loop() {
       lookCute();
     }
     
-    lastByte = incomingByte;
      delay (speed);
   
 }
