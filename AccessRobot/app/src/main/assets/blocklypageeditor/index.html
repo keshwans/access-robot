@@ -7,6 +7,7 @@
 		window.blockly_loaded = function(blockly) {
 			return window.Blockly = blockly;
 		}
+
 		window.run_code = function() {
 			code = window.Blockly.JavaScript.workspaceToCode();
 			Android.showToast('testing');
