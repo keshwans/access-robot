@@ -1,0 +1,15 @@
+#blockly
+{
+	border:1px solid #CCC;
+	padding-left:0;
+	height:300px;
+}
+#blockly_editor
+{
+	width:49%;
+	float:left;
+}
+#button_run
+{
+	margin-left:2%;
+}

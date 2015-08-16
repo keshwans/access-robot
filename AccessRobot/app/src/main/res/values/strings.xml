@@ -6,4 +6,5 @@
     <string name="instructions">Control your robot with this remote!</string>
     <string name="action_connect_robot">Connect robot</string>
     <string name="action_code">Code</string>
+    <string name="title_activity_code">Code</string>
 </resources>
