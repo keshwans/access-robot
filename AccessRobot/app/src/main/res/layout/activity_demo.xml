@@ -102,7 +102,7 @@
             android:layout_below="@id/btn_connect"
             android:layout_marginLeft="32dp"
             android:scaleType="center"
-            app:materialIcon="heart"
+            app:materialIcon="emoticon_tongue"
             app:materialIconColor="#0CABA1"
             app:materialIconSize="40dp" />
 
