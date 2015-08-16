@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">AccessRobot</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="instructions">Control your robot with this remote!</string>
-    <string name="action_connect_robot">Connect robot</string>
+    <string name="instructions">Control your robot!</string>
     <string name="action_code">Code</string>
+
 </resources>
