@@ -46,4 +46,5 @@ If you did not meet your goals, how will this affect the progression of the prod
   *  Are you getting adequate support? How are you reviewing code? So far we've only reached out to each other for support, but we're trying to arrange meetings with our mentors.
   *  How can you improve productivity and get the most work done within the next week? Just keep killing it.
 
-**Mentor Comments**:
+**Mentor Comments**:  
+8/22: Retro notes were sent to mentors 8/17, will be updated when feedback is received.
