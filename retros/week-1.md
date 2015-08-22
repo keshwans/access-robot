@@ -48,3 +48,5 @@ If you did not meet your goals, how will this affect the progression of the prod
 
 **Mentor Comments**:  
 8/22: Retro notes were sent to mentors 8/17, will be updated when feedback is received.
+
+Kenny: My only note was with Jae about building the robot. That might take too long to implement -- but since Ramona finished building it, it's not a big issue.
