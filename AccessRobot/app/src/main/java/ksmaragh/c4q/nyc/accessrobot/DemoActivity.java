@@ -439,6 +439,11 @@ public class DemoActivity extends AppCompatActivity {
                 ensureDiscoverable();
                 return true;
             }
+            case R.id.blockly:{
+                Intent intent = new Intent(this,Code.class);
+                startActivity(intent);
+                return true;
+            }
         }
         return super.onOptionsItemSelected(item);
     }

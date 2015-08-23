@@ -1,28 +1,122 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Blockly Code Editor</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- function that gets called once Blockly frame loads //-->
-    <script type="text/javascript">
-		window.blockly_loaded = function(blockly) {
-			return window.Blockly = blockly;
-		}
-		window.run_code = function() {
-			code = window.Blockly.JavaScript.workspaceToCode();
-			Android.showToast('testing');
-			eval(code);
+	<meta charset="utf-8">
+	<title>Blockly Demo: Resizable Blockly (Part 2)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Change back to compressed for production-->
+    <script src="blockly/blockly_uncompressed.js"></script>
+	<script src="blockly/blocks/logic.js"></script>
+    <script src="blockly/blocks/loops.js"></script>
+    <script src="blockly/blocks/math.js"></script>
+    <script src="blockly/blocks/text.js"></script>
+    <script src="blockly/blocks/lists.js"></script>
+    <script src="blockly/blocks/colour.js"></script>
+    <script src="blockly/blocks/variables.js"></script>
+    <script src="blockly/blocks/procedures.js"></script>
+    <script src="blockly/javascript_compressed.js"></script>
 
-		}
-	</script>
+    <script src="blockly/generators/javascript.js"></script>
+	<script src="blockly/msg/js/en.js"></script>
+	<script src="javascript.js"></script>
+	<script src="customblocks.js"></script>
+
 </head>
-<body>
-<div id="blockly_editor">
-    <!-- Blockly will be injected in the iframe below //-->
-    <iframe id="blockly" src="blockly.html" width="100%" height="70%"></iframe>
-</div>
 
-<button id="button_run" onclick="run_code()">
-    Run Code Block
+<body>
+
+
+<!--The toolbox will be injected into this div-->
+<div id="blocklyDiv" />
+
+<button id="button_run" onclick="runCode()">
+	Run Code Block!
 </button>
+<button id="button_bluetooth" onclick="configBluetooth()">
+    Config Bluetooth!
+</button>
+<button id="button_toolbar" onclick="slideToolbar()">
+    Slide Toolbar
+</button>
+
+
+
+<xml id="toolbox" style="background-color: blue;">
+	<category name="Colors">
+		<block type="color_red"></block>
+		<block type="color_green"></block>
+		<block type="color_blue"></block>
+		<block type="color_black"></block>
+		<block type="color_white"></block>
+	</category>
+	<category name="Logic">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+        <block type="logic_null"></block>
+	</category>
+    <category name="Loops">
+        <block type="controls_repeat_ext"></block>
+        <block type="controls_whileUntil"></block>
+        <block type="controls_for"></block>
+    </category>
+    <category name="Constants">
+        <block type="math_number_zero"></block>
+    </category>
+    <category name="Math">
+        <block type="math_arithmetic"></block>
+    </category>
+
+    <category name="Methods">
+        <block type="move_forward"></block>
+        <block type="move_backward"></block>
+        <block type="turn_left"></block>
+        <block type="turn_right"></block>
+        <block type="turn_right"></block>
+        <block type="stop"></block>
+        <block type="fade_light"></block>
+        <block type="blink_light"></block>
+	</category>
+
+</xml>
+
+
+<script>
+    var blocklyDiv = document.getElementById('blocklyDiv');
+    var workspace = Blockly.inject(blocklyDiv, {toolbox: document.getElementById('toolbox')});
+
+
+   function runCode() {
+      // Generate JavaScript code and run it.
+      var code = Blockly.JavaScript.workspaceToCode(workspace);
+      try {
+        alert(code);
+        //Android.talkToArduino(code);
+        //eval(code);
+      } catch (e) {
+        alert(e);
+      }
+    }
+
+    function configBluetooth() {
+        try {
+            Android.connectBluetooth();
+        } catch (e) {
+            alert(e);
+        }
+
+    }
+
+    function slideToolbar(){
+
+    }
+
+
+
+
+
+</script>
 </body>
 </html>

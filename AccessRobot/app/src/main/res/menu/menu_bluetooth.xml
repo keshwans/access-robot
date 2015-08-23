@@ -26,4 +26,8 @@
         myapp:showAsAction="never"
         android:title="@string/discoverable"/>
 
+    <item
+        android:id="@+id/blockly"
+        myapp:showAsAction="never"
+        android:title="@string/blockly"/>
 </menu>
