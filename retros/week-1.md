@@ -47,6 +47,6 @@ If you did not meet your goals, how will this affect the progression of the prod
   *  How can you improve productivity and get the most work done within the next week? Just keep killing it.
 
 **Mentor Comments**:  
-8/22: Retro notes were sent to mentors 8/17, will be updated when feedback is received.
+Kenny: My only note was with Jae about building the robot. That might take too long to implement -- but since Ramona finished building it, it's not a big issue.  
 
-Kenny: My only note was with Jae about building the robot. That might take too long to implement -- but since Ramona finished building it, it's not a big issue.
+Jeff: No notes, you're doing what I would do.
