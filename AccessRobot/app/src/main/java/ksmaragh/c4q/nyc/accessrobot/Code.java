@@ -29,7 +29,7 @@ public class Code extends AppCompatActivity {
 
         webView.addJavascriptInterface(new myJsInterface(this), "Android");
 
-        webView.loadUrl("file:///android_asset/blocklypageeditor/blockly/demos/resizable/overlay.html");
+        webView.loadUrl("file:///android_asset/blockly/blockly.html");
         setContentView(webView);
     }
 

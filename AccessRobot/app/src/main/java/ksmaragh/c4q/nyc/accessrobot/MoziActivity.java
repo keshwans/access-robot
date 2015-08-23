@@ -1,38 +1,24 @@
 package ksmaragh.c4q.nyc.accessrobot;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Toast;
 
-import net.steamcrafted.materialiconlib.MaterialIconView;
-
-import at.markushi.ui.CircleButton;
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import tourguide.tourguide.Overlay;
-import tourguide.tourguide.Pointer;
-import tourguide.tourguide.ToolTip;
-import tourguide.tourguide.TourGuide;
-
-public class DemoActivity extends AppCompatActivity {
-
-    private static final String TAG = "BluetoothFragment";
-    private final BluetoothHandler mHandler = new BluetoothHandler(this);
-
+public class MoziActivity extends AppCompatActivity {
 
     // Intent request codes
     private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
@@ -42,45 +28,30 @@ public class DemoActivity extends AppCompatActivity {
     private StringBuffer mOutStringBuffer;
     private BluetoothAdapter mBluetoothAdapter = null;
     private BluetoothArduinoService mChatService = null;
+    private final BluetoothHandler mHandler = new BluetoothHandler(this);
+    private WebView webView;
 
-    @Bind(R.id.btn_connect)
-    CircleButton btnConnect;
-    @Bind(R.id.btn_move_backward)
-    MaterialIconView btnMoveBackward;
-    @Bind(R.id.btn_move_forward)
-    MaterialIconView btnMoveForward;
-    @Bind(R.id.btn_move_left)
-    MaterialIconView btnMoveLeft;
-    @Bind(R.id.btn_move_right)
-    MaterialIconView btnMoveRight;
-    @Bind(R.id.btn_light_left)
-    MaterialIconView btnLightLeft;
-    @Bind(R.id.btn_light_right)
-    MaterialIconView btnLightRight;
-    @Bind(R.id.btn_look_cute)
-    MaterialIconView btnLookCute;
-    @Bind(R.id.btn_stop)
-    MaterialIconView btnStop;
+    private static final String TAG = "MoziActivity";
 
-    public TourGuide tutorialHandler;
-    Animation enterAnimation;
-    Animation exitAnimation;
-
-    boolean tutorialMode = true; // TODO: SharedPreferences
-
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo);
-
-        ButterKnife.bind(this);
-
-        // On first run, launch the tutorial.
-        setupEnterExitAnis();
-        initTourGuide();
+        setContentView(R.layout.activity_code);
         initBluetooth();
-        tutorialHandler.playOn(btnConnect);
+        WebSettings wSettings;
+
+        webView = new WebView(this);
+        webView.setClickable(true);
+        wSettings = webView.getSettings();
+        wSettings.setJavaScriptEnabled(true);
+        webView.addJavascriptInterface(new myJsInterface(this), "Android");
+        webView.loadUrl("file:///android_asset/blockly/blockly.html");
+        setContentView(webView);
+
+
     }
+
 
     private void initBluetooth() {
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -90,128 +61,31 @@ public class DemoActivity extends AppCompatActivity {
         }
     }
 
-    private void initTourGuide() {
-        // initialize TourGuide without playOn()
-        tutorialHandler = TourGuide.init(this).with(TourGuide.Technique.Click)
-                .setPointer(new Pointer())
-                .setToolTip(new ToolTip()
-                        .setTitle("Connect!")
-                        .setDescription("This lets the robot to listen to commands.")
-                        .setBackgroundColor(Color.parseColor("#78909C"))
-                        .setGravity(Gravity.CENTER_HORIZONTAL))
-                .setOverlay(new Overlay().setEnterAnimation(enterAnimation).setExitAnimation(exitAnimation));
-    }
 
-    private void setupEnterExitAnis() {
-        enterAnimation = new AlphaAnimation(0f, 1f);
-        enterAnimation.setDuration(600);
-        enterAnimation.setFillAfter(true);
 
-        exitAnimation = new AlphaAnimation(1f, 0f);
-        exitAnimation.setDuration(600);
-        exitAnimation.setFillAfter(true);
-    }
+    public class myJsInterface {
+        private Context con;
 
-    @OnClick(R.id.btn_connect)
-    public void connectRobot() {
-        if (tutorialMode) {
-            tutorialHandler.cleanUp();
-            tutorialHandler.setToolTip(new ToolTip()
-                    .setTitle("Move forward!")
-                    .setDescription("You can also move left, right, and backward.")
-                    .setBackgroundColor(Color.parseColor("#78909C"))
-                    .setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL))
-                    .playOn(btnMoveForward);
-        } else {
-            Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-            // Launch the DeviceListActivity to see devices and do scan
-            Intent serverIntent = new Intent(this, DeviceListActivity.class);
+        public myJsInterface(Context con) {
+            this.con = con;
+        }
+
+        @JavascriptInterface
+        public void talkToArduino(String msg) {
+            //Toast.makeText(MoziActivity.this, msg, Toast.LENGTH_SHORT).show();
+            sendMessage(msg);
+        }
+
+        @JavascriptInterface
+        public void connectBluetooth() {
+            Intent serverIntent = new Intent(MoziActivity.this, DeviceListActivity.class);
             startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
+
         }
+
     }
 
-    @OnClick(R.id.btn_move_backward)
-    public void moveBackward() {
-        Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-        sendMessage("b");
-    }
 
-    @OnClick(R.id.btn_move_forward)
-    public void moveForward() {
-        if (tutorialMode) {
-            tutorialHandler.cleanUp();
-            tutorialHandler.setToolTip(new ToolTip()
-                    .setTitle("Stop!")
-                    .setDescription("Tap here to stop moving.")
-                    .setBackgroundColor(Color.parseColor("#78909C"))
-                    .setGravity(Gravity.TOP | Gravity.LEFT))
-                    .playOn(btnStop);
-        } else {
-            Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-            sendMessage("f");
-        }
-    }
-
-    @OnClick(R.id.btn_move_left)
-    public void moveLeft() {
-        Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-        sendMessage("l");
-    }
-
-    @OnClick(R.id.btn_move_right)
-    public void moveRight() {
-        Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-        sendMessage("r");
-    }
-
-    @OnClick(R.id.btn_light_left)
-    public void lightLeft() {
-        if (tutorialMode) {
-            tutorialHandler.cleanUp();
-            tutorialHandler.setToolTip(new ToolTip()
-                    .setTitle("Look cute!")
-                    .setDescription("?!")
-                    .setBackgroundColor(Color.parseColor("#78909C"))
-                    .setGravity(Gravity.TOP | Gravity.RIGHT))
-                    .playOn(btnLookCute);
-        } else {
-            Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-            sendMessage("q");
-        }
-    }
-
-    @OnClick(R.id.btn_light_right)
-    public void lightRight() {
-        Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-        sendMessage("p");
-    }
-
-    @OnClick(R.id.btn_look_cute)
-    public void lookCute() {
-        if (tutorialMode) {
-            tutorialHandler.cleanUp();
-            tutorialMode = false;
-        } else {
-            Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-            sendMessage("u");
-        }
-    }
-
-    @OnClick(R.id.btn_stop)
-    public void stopMoving() {
-        if (tutorialMode) {
-            tutorialHandler.cleanUp();
-            tutorialHandler.setToolTip(new ToolTip()
-                    .setTitle("Light it up!")
-                    .setDescription("You can blink left and right LEDs.")
-                    .setBackgroundColor(Color.parseColor("#78909C"))
-                    .setGravity(Gravity.TOP | Gravity.RIGHT))
-                    .playOn(btnLightLeft);
-        } else {
-            Toast.makeText(this, "Beep boop!", Toast.LENGTH_SHORT).show();
-            sendMessage("x");
-        }
-    }
 
     /**
      * Set up the UI and background operations for chat.
@@ -284,9 +158,9 @@ public class DemoActivity extends AppCompatActivity {
      */
     private class BluetoothHandler extends Handler {
 
-        private final DemoActivity mActivity;
+        private final MoziActivity mActivity;
 
-        public BluetoothHandler(DemoActivity activity) {
+        public BluetoothHandler(MoziActivity activity) {
             mActivity = activity;
         }
 
@@ -325,8 +199,7 @@ public class DemoActivity extends AppCompatActivity {
                     // save the connected device's name
                     mConnectedDeviceName = msg.getData().getString(Constants.DEVICE_NAME);
                     if (null != mActivity) {
-                        Toast.makeText(mActivity, "Connected to "
-                                + mConnectedDeviceName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mActivity, "Mozi Connected!", Toast.LENGTH_SHORT).show();
                     }
                     break;
                 case Constants.MESSAGE_TOAST:
@@ -421,7 +294,7 @@ public class DemoActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_bluetooth, menu);
+        getMenuInflater().inflate(R.menu.menu_mozi, menu);
         return true;
     }
 
@@ -434,17 +307,25 @@ public class DemoActivity extends AppCompatActivity {
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
                 return true;
             }
-            case R.id.discoverable: {
+            case R.id.preview: {
                 // Ensure this device is discoverable by others
                 ensureDiscoverable();
                 return true;
             }
-            case R.id.blockly: {
-                Intent blocklyIntent = new Intent(this, MoziActivity.class);
-                startActivity(blocklyIntent);
+            case R.id.send_to_mozi: {
+                if (webView != null) {
+                    webView.evaluateJavascript("runCode()", null);
+                }
+                return true;
+            }
+            case R.id.settings: {
+                Intent settingsIntent = new Intent(this, SettingsActivity.class);
+                startActivity(settingsIntent);
                 return true;
             }
         }
         return super.onOptionsItemSelected(item);
     }
 }
+
+
