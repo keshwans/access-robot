@@ -1,13 +1,11 @@
 package ksmaragh.c4q.nyc.accessrobot;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 
@@ -21,17 +19,26 @@ public class SettingsActivity extends AppCompatActivity {
             switch (checkedId) {
                 case R.id.radio_bluetooth:
                     Log.d("interface type", "bluetooth");
+                    saveInterfaceType(AppConstants.INTERFACE_BLUETOOTH);
                     break;
                 case R.id.radio_serial:
                     Log.d("interface type", "serial cable");
+                    saveInterfaceType(AppConstants.INTERFACE_SERIAL_CABLE);
                     break;
             }
         }
     };
 
+    protected void saveInterfaceType(int interfaceType) {
+        SharedPreferences.Editor editor = getSharedPreferences(AppConstants.SETTINGS_PREFERENCES_NAME, MODE_PRIVATE).edit();
+        editor.putInt(AppConstants.SETTINGS_PREFERENCES_NAME, interfaceType);
+        editor.commit();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
