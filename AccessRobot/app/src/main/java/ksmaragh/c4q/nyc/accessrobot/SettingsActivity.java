@@ -6,12 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 
 public class SettingsActivity extends AppCompatActivity {
 
     RadioGroup rgInterfaceType;
+    RadioButton rbBluetooth;
+    RadioButton rbSerialCable;
+
     SharedPreferencesWrapper sharedPreferencesWrapper;
 
     RadioGroup.OnCheckedChangeListener interfaceTypeListener = new RadioGroup.OnCheckedChangeListener() {
@@ -41,6 +45,21 @@ public class SettingsActivity extends AppCompatActivity {
         rgInterfaceType = (RadioGroup) findViewById(R.id.interface_type);
         rgInterfaceType.setOnCheckedChangeListener(interfaceTypeListener);
 
+        rbBluetooth = (RadioButton) findViewById(R.id.radio_bluetooth);
+        rbSerialCable = (RadioButton) findViewById(R.id.radio_serial);
+
+        initializeView();
+
+    }
+
+    protected void initializeView() {
+        int interfaceType = sharedPreferencesWrapper.getInterfaceType();
+        if (interfaceType == AppConstants.INTERFACE_SERIAL_CABLE){
+            rbSerialCable.setChecked(true);
+        }
+        else {
+            rbBluetooth.setChecked(true);
+        }
     }
 
     @Override
