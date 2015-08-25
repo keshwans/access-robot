@@ -33,6 +33,13 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_mozi">MoziActivity</string>
+
+
+<!-- settings activity related -->
     <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="interface_type_label">Interface:</string>
+    <string name="interface_type_bluetooth">Bluetooth</string>
+    <string name="interface_type_serial">Serial cable</string>
 
 </resources>
