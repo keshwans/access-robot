@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 
-public class SharedPreferencesWrapper {
+public class SharedPreferencesHelper {
     Context mContext;
 
-    public SharedPreferencesWrapper(Context context) {
+    public SharedPreferencesHelper(Context context) {
         mContext = context;
     }
 

@@ -1,6 +1,5 @@
 package ksmaragh.c4q.nyc.accessrobot;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -16,7 +15,7 @@ public class SettingsActivity extends AppCompatActivity {
     RadioButton rbBluetooth;
     RadioButton rbSerialCable;
 
-    SharedPreferencesWrapper sharedPreferencesWrapper;
+    SharedPreferencesHelper sharedPreferencesHelper;
 
     RadioGroup.OnCheckedChangeListener interfaceTypeListener = new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -24,11 +23,11 @@ public class SettingsActivity extends AppCompatActivity {
             switch (checkedId) {
                 case R.id.radio_bluetooth:
                     Log.d("interface type", "bluetooth");
-                    sharedPreferencesWrapper.saveInterfaceType(AppConstants.INTERFACE_BLUETOOTH);
+                    sharedPreferencesHelper.saveInterfaceType(AppConstants.INTERFACE_BLUETOOTH);
                     break;
                 case R.id.radio_serial:
                     Log.d("interface type", "serial cable");
-                    sharedPreferencesWrapper.saveInterfaceType(AppConstants.INTERFACE_SERIAL_CABLE);
+                    sharedPreferencesHelper.saveInterfaceType(AppConstants.INTERFACE_SERIAL_CABLE);
                     break;
             }
         }
@@ -40,7 +39,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        sharedPreferencesWrapper = new SharedPreferencesWrapper(this);
+        sharedPreferencesHelper = new SharedPreferencesHelper(this);
 
         rgInterfaceType = (RadioGroup) findViewById(R.id.interface_type);
         rgInterfaceType.setOnCheckedChangeListener(interfaceTypeListener);
@@ -53,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     protected void initializeView() {
-        int interfaceType = sharedPreferencesWrapper.getInterfaceType();
+        int interfaceType = sharedPreferencesHelper.getInterfaceType();
         if (interfaceType == AppConstants.INTERFACE_SERIAL_CABLE){
             rbSerialCable.setChecked(true);
         }
