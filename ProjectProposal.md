@@ -1,6 +1,6 @@
 # Access Code 2.1 Final Project Proposal
 
-**Project Name: TBD**  
+**Project Name: Mozi**  
 **Team Name: Access Robot**  
 **Team Members: Jae Bales, Allison Bojarski, Ramona Harrison, Kadeem Maragh**  
 
