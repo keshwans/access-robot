@@ -6,12 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.widget.MediaController;
 import android.widget.VideoView;
-
-import java.io.IOException;
 
 public class VideoPlayerActivity extends AppCompatActivity {
 
